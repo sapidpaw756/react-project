@@ -1,0 +1,8 @@
+@import "mixins";
+
+//FONT SIZE - indicate only needed values
+$font-size-values:(8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 22, 23, 24, 25, 26);
+@include createGenericRulesEM("fs", "font-size", $baseFontSize, $font-size-values, "px", "");
+@include breakpoint("desktop") {
+    @include createGenericRulesEM("fs-lg", "font-size", $baseFontSize, $font-size-values, "px", "");
+}

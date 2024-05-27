@@ -1,0 +1,7 @@
+//colors
+$color-navyblue : #18206f;
+$color-mineshaft :#333333;
+
+
+//breakpoints
+$breakpoints: ( mobile-landscape: ("(min-width: 568px) and (max-width: 991px) and (orientation: landscape)"), mobile-small: (max-width: 767px, ), mobile: (max-width: 991px, ), mobile-smallest: (max-width: 320px, ), mobile-smaller: ("(min-width: 321px) and (max-width: 374px)"), tablet-m:( max-width:767px), medium-device: (min-width: 768px), desktop: (min-width: 992px, ), desktop-large: (min-width: 1200px, ), desktop-xlarge: (min-width: 1400px, ), desktop-fhd: (min-width: 1900px, ), ipad-resolution: ("(min-width: 992px) and (max-width: 1024px)"));

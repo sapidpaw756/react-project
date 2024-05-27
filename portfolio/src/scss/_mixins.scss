@@ -46,6 +46,14 @@
     }
 }
 
+@function str-replace($haytack, $target, $replace: '') {
+    $index: str-index($haytack, $target);
+    @if $index {
+        @return str-slice($haytack, 1, $index - 1)+$replace+str-replace(str-slice($haytack, $index + str-length($target)), $target, $replace);
+    }
+    @return $haytack;
+}
+
 @mixin azo-sans-uber-regular($isImportant: false) {
     @include font($azo-sans-uber, 400, $isImportant)
 }

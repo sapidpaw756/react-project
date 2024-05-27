@@ -1,0 +1,32 @@
+@import "mixins";
+
+p, h1, h2, h3, h4, h5, h6, span{
+    color: $color-charade;
+}
+
+html, .body{
+    scroll-behavior: smooth;
+}
+
+body.dark {
+    background-color: $color-charade;
+    .nav-header{
+        background-color: $color-buttercup;
+        ul li a{
+            color: white;
+        }
+        .navbar-toggle .icon-bar{
+            background: white;
+        }
+    }
+    p, h1, h2, h3, h4, h5, h6, span{
+        color: white;
+    }
+} 
+
+body.dark h1, body.dark .support a {color: white;}
+
+.page-section{
+    margin-top: 400px;
+    margin-bottom: 400px;
+}

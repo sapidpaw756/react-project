@@ -1,18 +1,55 @@
 @import "mixins";
 
 //FONT SIZE - indicate only needed values
-$font-size-values:(8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 22, 23, 24, 25, 26);
+$font-size-values: (
+  8,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  20,
+  22,
+  23,
+  24,
+  25,
+  26
+);
 @include createGenericRules("f-s", "font-size", $font-size-values, "px", "");
 @include breakpoint("desktop") {
-    @include createGenericRules("fs-lg", "font-size", $font-size-values, "px", "");
+  @include createGenericRules("fs-lg", "font-size", $font-size-values, "px", "");
 }
 
-.dark{
-    .dark-color-buttercup-l{
-        color: $color-buttercup-light !important;
-    }
+//MARGIN - indicate only needed values
+$margin-top-values: (0, 200);
+$margin-bottom-values: (0, 20, 200);
+
+@include createGenericRules("m-t", "margin-top", $margin-top-values, "px", "");
+@include createGenericRules("m-b", "margin-bottom", $margin-bottom-values, "px", "");
+
+//gap
+$gap-values: (0, 10, 20);
+@include createGenericRules("g", "gap", $gap-values, "px", "");
+
+//scroll margin  top
+
+$scroll-margin-top-values: (
+  0,
+  200
+);
+
+@include createGenericRules("s-m-t", "scroll-margin-top",$scroll-margin-top-values,"px","");
+
+.dark {
+  .dark-color-buttercup-l {
+    color: $color-buttercup-light !important;
+  }
 }
 
-.color-deep-cerulean{
-   color: $color-cadetblue !important;
+.color-deep-cerulean {
+  color: $color-cadetblue !important;
 }

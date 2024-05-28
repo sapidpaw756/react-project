@@ -2,10 +2,19 @@
 
 .skill-list{
     .card{
-        max-width: 120px;
+        max-width: 150px;
+        min-height: 174px;
         border-radius: 15px;
+        padding: 0;
+        @include breakpoint("desktop") {
+            min-height: 144px;
+            max-width: 120px;
+        }
         img{
             border-radius: 12px 12px 0 0;
+            background: $color-alto;
+            width: 100%;
+            height: 100%;
         }
         p{
             display: flex;
@@ -13,8 +22,16 @@
             margin-bottom: 0;
         }
     }
+    .row{
+        @include breakpoint("mobile") {
+            justify-content: space-around;
+        }
+    }
 }
 
 .dark .card{
     background-color: $color-chatelle;
+    img{
+        background: white;
+    }
 }

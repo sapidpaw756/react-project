@@ -51,6 +51,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
     .link-list{
         display: flex;
         align-items: center;
@@ -78,6 +79,9 @@
                 color: $color-charade;
                 text-decoration: none;
                 font-weight: 500;
+                &.active{
+                    color: white;
+                }
             }
         }
     }

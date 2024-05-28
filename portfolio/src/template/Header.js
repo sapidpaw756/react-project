@@ -11,11 +11,25 @@ const themeSwitcher = () => {
   document.body.classList.toggle("dark")
 }
 
-window.addEventListener('resize', function(event) {
-  if(this.window.innerWidth >= 992){
-    document.body.classList.remove('nav-collapse');
-  }
-}, true);
+const onLoad = () =>{
+  window.addEventListener('resize', function(event) {
+    if(this.window.innerWidth >= 992){
+      document.body.classList.remove('nav-collapse');
+    }
+  }, true);
+  
+  
+  document.querySelectorAll('.nav-header a').forEach(elem => { 
+    elem.addEventListener('click', function (e) {
+        document.querySelectorAll('.nav-header a').forEach(i => { i.classList.remove('active') });
+
+        e.target.classList.toggle('active');
+    });
+  });
+}
+
+
+
 
 const Header = () => {
   return (
@@ -52,5 +66,11 @@ const Header = () => {
     </div>
   );
 }
+
+document.onreadystatechange = function() {
+  if (document.readyState === 'complete') {
+    onLoad();
+  }
+};
 
 export default Header;

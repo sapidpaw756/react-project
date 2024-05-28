@@ -18,7 +18,7 @@ import '../scss/skills.scss';
 
 const Skills = () => {
     return (
-      <div id="Skills" className="page-section m-t-200">
+      <div id="Skills" className="page-section m-t-100 m-t-lg-200">
         <div className="content">
             <div className="col-12">
                 <h1 className="color-deep-cerulean dark-color-buttercup-l m-b-20">Technology Skills:</h1>

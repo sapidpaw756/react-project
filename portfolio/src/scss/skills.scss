@@ -8,7 +8,11 @@
         padding: 0;
         @include breakpoint("desktop") {
             min-height: 144px;
+            max-width: 118px;
+        }
+        @include breakpoint("desktop-large") {
             max-width: 120px;
+            min-height: unset;
         }
         img{
             border-radius: 12px 12px 0 0;

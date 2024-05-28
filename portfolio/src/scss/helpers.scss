@@ -17,19 +17,26 @@ $font-size-values: (
   23,
   24,
   25,
-  26
+  26,
+  40,
+  80
 );
-@include createGenericRules("f-s", "font-size", $font-size-values, "px", "");
+@include createGenericRules("fs", "font-size", $font-size-values, "px", "");
 @include breakpoint("desktop") {
   @include createGenericRules("fs-lg", "font-size", $font-size-values, "px", "");
 }
 
 //MARGIN - indicate only needed values
-$margin-top-values: (0, 200);
+$margin-top-values: (0, 80, 100, 200);
 $margin-bottom-values: (0, 20, 200);
 
 @include createGenericRules("m-t", "margin-top", $margin-top-values, "px", "");
 @include createGenericRules("m-b", "margin-bottom", $margin-bottom-values, "px", "");
+
+@include breakpoint("desktop") {
+    @include createGenericRules("m-t-lg", "margin-top", $margin-top-values, "px", "");
+    @include createGenericRules("m-b-lg", "margin-bottom", $margin-bottom-values, "px", "");
+}
 
 //gap
 $gap-values: (0, 10, 20);

@@ -24,6 +24,7 @@ const onLoad = () =>{
         document.querySelectorAll('.nav-header a').forEach(i => { i.classList.remove('active') });
 
         e.target.classList.toggle('active');
+        document.body.classList.remove('nav-collapse');
     });
   });
 }

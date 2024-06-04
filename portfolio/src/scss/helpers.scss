@@ -46,10 +46,18 @@ $gap-values: (0, 10, 20);
 
 $scroll-margin-top-values: (
   0,
+  50,
+  80,
+  90, 
+  100,
   200
 );
 
 @include createGenericRules("s-m-t", "scroll-margin-top",$scroll-margin-top-values,"px","");
+
+@include breakpoint("desktop") {
+  @include createGenericRules("s-m-t-lg", "scroll-margin-top",$scroll-margin-top-values,"px","");
+}
 
 .dark {
   .dark-color-buttercup-l {

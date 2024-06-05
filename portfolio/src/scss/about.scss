@@ -4,5 +4,8 @@
 .promo-img {
     img{
         width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 6px 1px 14px black; 
     }
 }

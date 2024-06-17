@@ -18,14 +18,14 @@ import '../scss/skills.scss';
 
 const Skills = () => {
     return (
-      <div id="Skills" className="page-section s-m-t-80 s-m-t-lg-0 m-t-100 m-t-lg-100">
+      <div id="Skills" className="page-section s-m-t-80 s-m-t-lg-0 p-t-40 p-b-40">
         <div className="content">
             <div className="col-12">
-                <h1 className="color-deep-cerulean dark-color-buttercup-l m-b-20">Technology Skills:</h1>
+                <h1 className="color-deep-cerulean fs-40 fs-lg-60 dark-color-buttercup-l m-b-20">Technology Skills:</h1>
             </div>
             <div className="col-12 skill-list">
                 <h1>Front-End:</h1>
-                <div className="row g-20 m-b-20">
+                <div className="d-flex g-20 m-b-20">
                     <div className="card">
                         <img src={htmlLogo} alt="html" />
                         <p>HTML 5</p>
@@ -56,7 +56,7 @@ const Skills = () => {
                     </div>
                 </div>
                 <h1>Back-End:</h1>
-                <div className="row g-20">
+                <div className="d-flex g-20">
                     <div className="card">
                         <img src={netLogo} alt="html" />
                         <p>ASP .Net</p>
@@ -71,7 +71,7 @@ const Skills = () => {
                     </div>
                 </div>
                 <h1>Database</h1>
-                <div className="row g-20">
+                <div className="d-flex g-20">
                     <div className="card">
                         <img src={msSQLLogo} alt="html" />
                         <p>MSSQL</p>

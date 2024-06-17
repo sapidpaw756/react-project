@@ -11,11 +11,11 @@ html, .body{
 body.dark {
     background-color: $color-charade;
     .nav-header{
-        background-color: $color-buttercup;
+        background-color: $color-stromboli;
         ul li a{
             color: white;
             &.active{
-                color: $color-charade;
+                color: $color-buttercup-light;
             }
         }
         .navbar-toggle .icon-bar{
@@ -24,6 +24,21 @@ body.dark {
     }
     p, h1, h2, h3, h4, h5, h6, span{
         color: white;
+    }   
+    .experience{
+        .exp-company > div{
+            background: #344C64;
+            &:after{
+                border-right: 24px solid white;
+            }
+        }
+        .timeline-block:after{
+            background: white;
+        }
+        &:after{
+            border-right: thick solid white;
+        }
+        
     }
 } 
 

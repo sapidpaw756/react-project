@@ -1,0 +1,85 @@
+@import "mixins";
+
+.experience{
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        border-right: thick solid $color-dark;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .timeline-block{
+        position: relative;
+        &:before{
+            content: "";
+            height: 68px;
+            width: 68px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, rgba(241,241,241,1) 0%, rgba(95,158,160,1) 75%);
+            z-index: 2;
+            position: absolute;
+            top: 36px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        &:after{
+            content: "";
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background: $color-dark;
+            z-index: 2;
+            position: absolute;
+            top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        &.reverse{
+            flex-direction: row-reverse;
+            .exp-company{
+                display: flex;
+                justify-content: flex-end;
+                > div:after{
+                    right: unset;
+                    left: -40px;
+                    transform: rotate(0deg);
+                }
+            }
+            .exp-year{
+                text-align: right;
+                margin-right: 50px;
+            }
+        }
+    }
+    .exp-company > div{
+        width: 450px;
+        padding: 25px;
+        background: #f1f1f1;
+        border-radius: 12px;
+        box-shadow: 2px 3px 8px $color-prussian-blue;
+        position: relative;
+        margin:  20px 0;
+        &:after{
+            content: "";
+            position: absolute;
+            right: -40px;
+            top: 30px;
+            transform: translateY(-50%);
+            border: 16px solid transparent;
+            border-right: 24px solid #00224D;
+            transform: rotate(180deg);
+        }
+    }
+}

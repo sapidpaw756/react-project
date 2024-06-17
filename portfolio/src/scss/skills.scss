@@ -26,7 +26,8 @@
             margin-bottom: 0;
         }
     }
-    .row{
+    .d-flex{
+        flex-wrap: wrap;
         @include breakpoint("mobile") {
             justify-content: space-around;
         }

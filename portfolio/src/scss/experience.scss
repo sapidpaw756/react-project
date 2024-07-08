@@ -9,42 +9,59 @@
         height: 100%;
         top: 0;
         border-right: thick solid $color-dark;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
+        left: 30px;
+        @include breakpoint("desktop") {
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     .timeline-block{
         position: relative;
         &:before{
             content: "";
-            height: 68px;
-            width: 68px;
+            height: 48px;
+            width: 48px;
             border-radius: 50%;
             background: linear-gradient(180deg, rgba(241,241,241,1) 0%, rgba(95,158,160,1) 75%);
-            z-index: 2;
-            position: absolute;
-            top: 36px;
-            margin-left: auto;
-            margin-right: auto;
-            left: 0;
-            right: 0;
-            text-align: center;
-        }
-        &:after{
-            content: "";
-            height: 60px;
-            width: 60px;
-            border-radius: 50%;
-            background: $color-dark;
             z-index: 2;
             position: absolute;
             top: 40px;
             margin-left: auto;
             margin-right: auto;
-            left: 0;
-            right: 0;
+            left: -5px;
+            right: unset;
             text-align: center;
+            @include breakpoint("desktop") {
+                height: 68px;
+                width: 68px;
+                left: 0;
+                right: 0;
+                top: 36px;
+            }
+        }
+        &:after{
+            content: "";
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: white;
+            z-index: 2;
+            position: absolute;
+            top: 44px;
+            margin-left: auto;
+            margin-right: auto;
+            left: -1px;
+            right: unset;
+            text-align: center;
+            @include breakpoint("desktop") {
+                height: 60px;
+                width: 60px;
+                left: 0;
+                right: 0;
+                top: 40px;
+            }
         }
         &.reverse{
             flex-direction: row-reverse;
@@ -53,8 +70,11 @@
                 justify-content: flex-end;
                 > div:after{
                     right: unset;
-                    left: -40px;
+                    left: -25px;
                     transform: rotate(0deg);
+                    @include breakpoint("desktop") {
+                        left: -40px;
+                    }
                 }
             }
             .exp-year{
@@ -63,23 +83,119 @@
             }
         }
     }
-    .exp-company > div{
-        width: 450px;
-        padding: 25px;
-        background: #f1f1f1;
-        border-radius: 12px;
-        box-shadow: 2px 3px 8px $color-prussian-blue;
-        position: relative;
-        margin:  20px 0;
-        &:after{
-            content: "";
-            position: absolute;
-            right: -40px;
-            top: 30px;
-            transform: translateY(-50%);
-            border: 16px solid transparent;
-            border-right: 24px solid #00224D;
-            transform: rotate(180deg);
+    .exp-company {
+        justify-content: flex-end;
+        display: flex;
+        @include breakpoint("desktop") {
+            justify-content: flex-start;
+        }
+        > div{
+            width: 80%;
+            padding: 25px;
+            background: #f1f1f1;
+            border-radius: 12px;
+            box-shadow: 2px 3px 8px $color-prussian-blue;
+            position: relative;
+            margin:  20px 0;
+            @include breakpoint("desktop") {
+                width: 450px;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                border: 8px solid transparent;
+                border-right: 15px solid #00224D;
+                transform: rotate(180deg);
+                right: unset;
+                left: -25px;
+                transform: rotate(0deg);
+                top: 36px;
+                @include breakpoint("desktop") {
+                    border: 16px solid transparent;
+                    border-right: 24px solid #00224D;
+                    right: -40px;
+                    transform: rotate(180deg);
+                    left: unset;
+                }
+            }
+        }
+    }
+    .exp-year{
+        text-align: right;
+        @include breakpoint("desktop") {
+            text-align: left;
+        }
+    }
+    .logo-cont{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 5px;
+        right: unset;
+        text-align: center;
+        z-index: 3;
+        top: 49px;
+        @include breakpoint("desktop") {
+            left: 0;
+            right: 0;
+            top: 51px;
+        }
+        img{
+            width: 30px;
+            @include breakpoint("desktop") {
+                width: 40px;  
+            }
+        }
+        &.nyk-logo{
+            top: 52px;
+            @include breakpoint("desktop") {
+                top: 58px;
+            }
+        }
+        &.teli-logo{
+            top: 49px;
+            @include breakpoint("desktop") {
+                top: 55px;
+            }
+        }
+        &.rcbc-logo{
+            top: 49px;
+            @include breakpoint("desktop") {
+                top: 55px;
+            }
+        }
+        &.accenture-logo{
+            top: 49px;
+            @include breakpoint("desktop") {
+                top: 55px;
+            }
         }
     }
 }
+
+.btn-resume {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.btn-resume:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.btn-resume:active {
+	position:relative;
+	top:1px;
+}
+
+        

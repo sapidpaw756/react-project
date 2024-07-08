@@ -1,5 +1,9 @@
 import '../scss/experience.scss';
-// import acnLogo from '../images/accenture-logo.png';
+import resumeLogo from '../images/resume-logo.png';
+import nykLogo from '../images/nyk-logo.png';
+import teliLogo from '../images/teligent-logo.png';
+import rcbcLogo from '../images/rcbc-logo.png';
+import accentureLogo from '../images/accenture-logo.png';
 
 const Experience = () => {
     return (
@@ -23,6 +27,9 @@ const Experience = () => {
                     <div className='col-lg-6 col-12 exp-year m-l-lg-50 m-t-lg-55'>
                         <p><strong>FEBRUARY 26 2021 - PRESENT</strong></p>
                     </div>
+                    <div className="logo-cont accenture-logo">
+                      <img src={accentureLogo} className="exp-logo" alt="logo" />
+                    </div>
                 </div>
                 <div className='col-12 timeline-block reverse d-lg-flex '>
                     <div className='col-lg-6 col-12 exp-company'>
@@ -37,6 +44,9 @@ const Experience = () => {
                     </div>
                     <div className='col-lg-6 col-12 exp-year m-t-lg-55'>
                         <p><strong>APRIL 1 2019 - JANUARY 12 2021</strong></p>
+                    </div>
+                    <div className="logo-cont rcbc-logo">
+                      <img src={rcbcLogo} className="exp-logo" alt="logo" />
                     </div>
                 </div>
                 <div className='col-12 timeline-block d-lg-flex '>
@@ -53,6 +63,9 @@ const Experience = () => {
                     <div className='col-lg-6 col-12 exp-year m-l-lg-50 m-t-lg-55'>
                         <p><strong>FEBRUARY 05 2018 - MARCH 12 2019</strong></p>
                     </div>
+                    <div className="logo-cont teli-logo">
+                      <img src={teliLogo} className="exp-logo" alt="logo" />
+                    </div>
                 </div>
                 <div className='col-12 timeline-block reverse d-lg-flex '>
                     <div className='col-lg-6 col-12 exp-company'>
@@ -68,19 +81,20 @@ const Experience = () => {
                     <div className='col-lg-6 col-12 exp-year m-t-lg-55'>
                         <p><strong>JUNE 16 2015 - SEPTEMBER 22 2017</strong></p>
                     </div>
+                    <div className="logo-cont nyk-logo">
+                      <img src={nykLogo} className="exp-logo" alt="logo" />
+                    </div>
                 </div>
                 <div className='col-12 timeline-block d-lg-flex '>
                     <div className='col-lg-6 col-12 exp-company'>
-                      <div>
-                        <h2>
-                          ACCENTURE INC.
-                        </h2>
-                        <p className='m-0'>
-                          FRONT-END DEVELOPER
-                        </p>
+                      <div className="text-center">
+                        <button className="btn-resume">RESUME</button>
                       </div>
                     </div>
                     <div className='col-lg-6 col-12 exp-year m-l-lg-50 m-t-lg-55'>
+                    </div>
+                    <div className="logo-cont">
+                      <img src={resumeLogo} className="exp-logo" alt="logo" />
                     </div>
                 </div>
               </div>

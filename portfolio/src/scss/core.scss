@@ -29,7 +29,10 @@ body.dark {
         .exp-company > div{
             background: #344C64;
             &:after{
-                border-right: 24px solid white;
+                border-right: 15px solid white;
+                @include breakpoint("desktop") {
+                    border-right: 24px solid white;
+                }
             }
         }
         .timeline-block:after{

@@ -27,6 +27,30 @@ const onLoad = () =>{
         document.body.classList.remove('nav-collapse');
     });
   });
+
+  const scrollImage = () => {
+
+    const img = document.querySelectorAll('.exp-company');
+
+    function checkVisible(elm) {
+      var rect = elm.getBoundingClientRect();
+      var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+    if(img){
+      img.forEach(i => {
+        if(checkVisible(i)){
+          i.classList.remove('invi');
+        }
+        else{
+          i.classList.add('invi');
+        }
+      })
+    }
+  }
+
+  window.addEventListener('scroll', scrollImage, true);
 }
 
 

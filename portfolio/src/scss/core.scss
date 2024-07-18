@@ -6,6 +6,7 @@ p, h1, h2, h3, h4, h5, h6, span{
 
 html, .body{
     scroll-behavior: smooth;
+    padding-bottom: 0;
 }
 
 body.dark {
@@ -42,6 +43,12 @@ body.dark {
             border-right: thick solid white;
         }
         
+    }
+    .form-container{
+        background: $color-pickled-bluewood;
+        .btn-submit{
+            background: $color-buttercup;
+        }
     }
 } 
 

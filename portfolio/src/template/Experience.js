@@ -7,14 +7,14 @@ import accentureLogo from '../images/accenture-logo.png';
 
 const Experience = () => {
     return (
-      <div id="Experience" className="page-section about-section p-t-40 p-b-40 s-m-t-80">
+      <div id="Experience" className="page-section p-t-40 p-b-40 s-m-t-80 bg-malibu dark-bg-color-cerulean-blue">
         <div className="content">
             <div className="row">
-              <h1 className="color-deep-cerulean fs-40 fs-lg-60 dark-color-buttercup-l m-b-60">Work Experience:</h1>
+              <h1 className="color-charade fs-40 fs-lg-60 dark-color-white m-b-60">Work Experience:</h1>
 
               <div className='col-12 experience'>
                 <div className='col-12 timeline-block d-lg-flex '>
-                    <div className='col-lg-6 col-12 exp-company'>
+                    <div className='col-lg-6 col-12 exp-company invi'>
                       <div>
                         <h2>
                           ACCENTURE INC.
@@ -32,7 +32,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className='col-12 timeline-block reverse d-lg-flex '>
-                    <div className='col-lg-6 col-12 exp-company'>
+                    <div className='col-lg-6 col-12 exp-company invi'>
                       <div>
                         <h2>
                           RCBC BANKARD.
@@ -50,7 +50,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className='col-12 timeline-block d-lg-flex '>
-                    <div className='col-lg-6 col-12 exp-company'>
+                    <div className='col-lg-6 col-12 exp-company invi'>
                       <div>
                         <h2>
                           TELIGENT SYSTEM INC.
@@ -68,7 +68,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className='col-12 timeline-block reverse d-lg-flex '>
-                    <div className='col-lg-6 col-12 exp-company'>
+                    <div className='col-lg-6 col-12 exp-company invi'>
                       <div>
                         <h2>
                           NYK-FIL MARITIME E-TRAINING INC.
@@ -86,7 +86,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className='col-12 timeline-block d-lg-flex '>
-                    <div className='col-lg-6 col-12 exp-company'>
+                    <div className='col-lg-6 col-12 exp-company invi'>
                       <div className="text-center">
                         <button className="btn-resume">RESUME</button>
                       </div>
@@ -103,5 +103,6 @@ const Experience = () => {
       </div>
     );
 }
+
   
 export default Experience;

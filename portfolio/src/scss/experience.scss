@@ -86,6 +86,7 @@
     .exp-company {
         justify-content: flex-end;
         display: flex;
+        transition: all ease-in-out 0.8s;
         @include breakpoint("desktop") {
             justify-content: flex-start;
         }
@@ -98,6 +99,9 @@
             position: relative;
             margin:  20px 0;
             @include breakpoint("desktop") {
+                width: 350px;
+            }
+            @include breakpoint("desktop-large") {
                 width: 450px;
             }
             &:after{
@@ -118,6 +122,9 @@
                     left: unset;
                 }
             }
+        }
+        &.invi{
+            opacity: 0;
         }
     }
     .exp-year{

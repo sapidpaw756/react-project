@@ -94,7 +94,7 @@ const Header = () => {
 
 document.onreadystatechange = function() {
   if (document.readyState === 'complete') {
-    onLoad();
+    setTimeout(onLoad(), 500);
   }
 };
 

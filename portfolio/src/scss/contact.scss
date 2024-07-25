@@ -32,11 +32,12 @@
     .form{
         gap: 1.5rem;
     }
-    .invalid-email{
+    .invalid-email, .required-email{
         margin-top: 10px;
+        font-weight: bold;
     }
     .btn-submit{
-        background: #344C64;
+        background: $color-pickled-bluewood;
         -webkit-border-radius: 8;
         -moz-border-radius: 8;
         border-radius: 8px;
@@ -48,4 +49,40 @@
         font-weight: 700;
         border: 0;
     }
+}
+
+.ReactModalPortal{
+    .ReactModal__Overlay--after-open{
+        z-index: 20;
+    }
+    .ReactModal__Content--after-open{
+        padding-top: 0 !important;
+        @include breakpoint("desktop") {
+            min-width: 500px;
+        }
+        
+    }
+    .btn-container{
+        position: relative;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .close-btn{
+        background: transparent;
+        border: 0;    
+        position: relative;
+        &:after{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: -20px;
+            font-size: 50px;
+            content: "\00d7"; 
+        }
+    }
+}
+
+.ReactModal__Body--open{
+    overflow: hidden;
 }

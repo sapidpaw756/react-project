@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-      <div id="Home" className="page-section s-m-t-200 m-t-100 m-t-lg-200 p-b-100">
+      <div id="Home" className="page-section s-m-t-200 m-t-100 m-t-lg-150 p-b-100">
         <div className="content">
             <div className="col-12 text-center">
                 <p className="fs-40 fs-lg-80 f-monospace">&#123;Hi. I'm Pipoy. <br /> Full Stack Developer.&#125;</p>

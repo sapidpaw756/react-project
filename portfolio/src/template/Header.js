@@ -1,4 +1,4 @@
-import logo from '../logo.svg';
+import logo from '../images/asp-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import '../scss/header.scss';

@@ -5,16 +5,10 @@
 }
 
 .App-logo {
-    height: 15vmin;
+    height: 10vmin;
     pointer-events: none;
     @include breakpoint("desktop"){
-        height: 10vmin;
-    }
-}
-
-.App-logo {
-    @include breakpoint("desktop"){
-        animation: App-logo-spin infinite 20s linear;
+        height: 5vmin;
     }
 }
 
@@ -33,15 +27,6 @@
     color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .content{
     @include bootstrap-container-behaviour;
 }
@@ -52,6 +37,7 @@
     top: 0;
     width: 100%;
     z-index: 10;
+    padding: 10px 0;
     .link-list{
         display: flex;
         align-items: center;
@@ -92,6 +78,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 5px;
         @include breakpoint("desktop"){
             display: none;
         }
@@ -102,7 +89,7 @@
             width: 25px;
             background: $color-charade;
             display: block;
-            margin-top: 8px;
+            margin-bottom: 8px;
             opacity: 1;
         }
     }

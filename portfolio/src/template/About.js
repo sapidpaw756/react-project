@@ -10,7 +10,7 @@ const Age = () => {
 
 const About = () => {
     return (
-      <div id="About" className="page-section about-section p-t-40 p-b-40 s-m-t-65 bg-bittersweet">
+      <div id="About" className="page-section about-section p-t-40 p-b-40 s-m-t-50 s-m-t-lg-65 bg-bittersweet">
         <div className="content">
             <div className="row">
                 <div className="col-12 col-lg-4 promo-img text-center">

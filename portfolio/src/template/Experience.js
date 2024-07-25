@@ -8,7 +8,7 @@ import resumePDF from '../files/alfie-resume-2024.pdf';
 
 const Experience = () => {
     return (
-      <div id="Experience" className="page-section p-t-40 p-b-40 s-m-t-65 bg-malibu dark-bg-color-cerulean-blue">
+      <div id="Experience" className="page-section p-t-40 p-b-40 s-m-t-50 s-m-t-lg-65 bg-malibu dark-bg-color-cerulean-blue">
         <div className="content">
             <div className="row">
               <h1 className="color-charade fs-40 fs-lg-60 dark-color-white m-b-60">Work Experience:</h1>

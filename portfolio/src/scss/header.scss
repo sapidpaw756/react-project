@@ -118,6 +118,9 @@
                     text-align: center;
                     a{
                         color: $color-mineshaft;
+                        &.active{
+                           color: $color-buttercup-light;
+                        }
                     }
                 }
             }

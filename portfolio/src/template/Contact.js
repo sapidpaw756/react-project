@@ -95,7 +95,7 @@ const Contact = () => {
 
     return (
       
-      <div id="Contact" className="page-section contact-section p-t-80 p-b-80 s-m-t-65">
+      <div id="Contact" className="page-section contact-section p-t-80 p-b-80 s-m-t-50 s-m-t-lg-65">
         <div className="content">
             <div className="row">
               <div className="col-12 d-flex">

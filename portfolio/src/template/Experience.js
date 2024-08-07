@@ -21,7 +21,7 @@ const Experience = () => {
                           ACCENTURE INC.
                         </h2>
                         <p className='m-0'>
-                          FRONT-END DEVELOPER
+                          Senior Software Engineer
                         </p>
                       </div>
                     </div>
@@ -39,7 +39,7 @@ const Experience = () => {
                           RCBC BANKARD.
                         </h2>
                         <p className='m-0'>
-                          FRONT-END DEVELOPER
+                          Software Engineer
                         </p>
                       </div>
                     </div>
@@ -57,7 +57,7 @@ const Experience = () => {
                           TELIGENT SYSTEM INC.
                         </h2>
                         <p className='m-0'>
-                          FRONT-END DEVELOPER
+                          Software Engineer
                         </p>
                       </div>
                     </div>
@@ -75,7 +75,7 @@ const Experience = () => {
                           NYK-FIL MARITIME E-TRAINING INC.
                         </h2>
                         <p className='m-0'>
-                          FRONT-END DEVELOPER
+                          JR. Developer
                         </p>
                       </div>
                     </div>

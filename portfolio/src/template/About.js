@@ -18,10 +18,10 @@ const About = () => {
                 </div>
                 <div className="col-12 col-lg-8 text-left">
                     <p className="text-center fs-60">Hi! Thanks for dropping by.</p>
-                    <p className="fs-20 p-l-lg-30 text-center">My name is Alfie, I'm {<Age/>} years young, happily married, no kids yet but hey, we're working on it!<br /><br />
-                    On my free time, I enjoy watching anime series, reading manga and surfing the net. I'm not really the athletic type but you can count on me for most online games. <br/><br />
-                    I have been a software engineer for various companies for a couple of years now, doing back end support in my early years and recently, a lot of front-end activities. feel free to explore my Portfolio to learn more bout my work experience. <br/><br />
-                    He'res to hoping I get shortlisted for your Company! Cheers!</p>
+                    <p className="fs-20 p-l-lg-30 text-center">My name is Alfie, I'm {<Age/>} years young, happily married, no kids yet, but hey, we're working on it!<br /><br />
+                    In my free time, I enjoy watching anime series, reading manga and surfing the net. I'm not really the athletic type but, you can count on me for most online games. <br/><br />
+                    I have been a software engineer for various companies for a couple of years now, doing back end support in my early years and recently, a lot of front-end activities. Feel free to explore my Portfolio to learn more bout my work experience. <br/><br />
+                    Here's to hoping I get shortlisted for your company. Cheers!</p>
                 </div>
             </div>
         </div>

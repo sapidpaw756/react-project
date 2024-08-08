@@ -53,6 +53,11 @@ body.dark {
     .btn-resume{
         background: $color-buttercup;
     }
+    .ReactModalPortal {
+        h2,p{
+            color: $color-charade;
+        }
+    }
 } 
 
 body.dark h1, body.dark .support a {color: white;}

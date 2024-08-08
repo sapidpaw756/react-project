@@ -10,9 +10,11 @@ const navCollapse = () => {
 const themeSwitcher = () => {
   document.body.classList.toggle("dark")
 }
-
+  
 const onLoad = () =>{
-
+  setTimeout(function (){
+    document.querySelector('.switcher-container .checkbox').click();
+  },50);
   window.addEventListener('resize', function(event) {
     if(this.window.innerWidth >= 992){
       document.body.classList.remove('nav-collapse');

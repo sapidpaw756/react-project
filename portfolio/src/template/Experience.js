@@ -4,7 +4,7 @@ import nykLogo from '../images/nyk-logo.png';
 import teliLogo from '../images/teligent-logo.png';
 import rcbcLogo from '../images/rcbc-logo.png';
 import accentureLogo from '../images/accenture-logo.png';
-import resumePDF from '../files/alfie-resume-2024.pdf';
+import resumePDF from '../files/alfie-resume-2025.pdf';
 
 const Experience = () => {
     return (

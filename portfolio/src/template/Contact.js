@@ -64,7 +64,7 @@ const Contact = () => {
       if(input && input.length && input.match(emailRegex)){
         required.classList.add('d-none');
         const templateId = 'template_kw6hwqj';
-        const serviceId = 'service_3twr177';
+        const serviceId = 'service_u8me1wg';
 
         var templateParams = {
           name: 'James',
